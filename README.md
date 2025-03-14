@@ -27,6 +27,8 @@ A basic understanding of object-oriented programming is required. However, speci
 
 We are going to use [NumPy](https://numpy.org/) for basic matrix operations, especially within the format of jupyter notebook. Formal python scripts will be written in [Jax](https://jax.readthedocs.io/en/latest/), which is faster and modern alternative to NumPy.
 
+We will also use [Matplotlib](https://matplotlib.org/) for plotting, and [Pygame](https://www.pygame.org/) for visualization.
+
 ## Formatting
 
 For each topic we will have a separate folder, with each folder containing jupyter notebooks and python scripts.
