@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# bot stopper
+User-agent: *
+Disallow: /
+
 # C extensions
 *.so
 
