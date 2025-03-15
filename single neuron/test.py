@@ -1,7 +1,7 @@
 import pytest
 import jax.numpy as jnp
 import jax
-from numpy.testing import assert_array_almost_equal
+from jax.numpy import allclose
 from vector import Vector
 from matrix import Matrix
 from exception import ShapeError, ImmutableProperty, MustExist
@@ -148,11 +148,10 @@ def test_matrix_vector_multiplication_vs_jax():
     jax_result = jnp.dot(jax_matrix, jax_vector)
 
     # Compare results
-    assert_array_almost_equal(
-        custom_result.value,
+    assert allclose(
+        jnp.array(custom_result.value),
         jax_result,
-        decimal=5,
-        err_msg="Custom matrix-vector multiplication differs from JAX implementation",
+        rtol=1e-5,
     )
 
 
@@ -180,9 +179,8 @@ def test_vector_vector_dot_product_vs_jax():
     jax_result = jnp.dot(jax_vector1, jax_vector2)
 
     # Compare results
-    assert_array_almost_equal(
+    assert allclose(
         custom_result,  # type: ignore
         jax_result,
-        decimal=5,
-        err_msg="Custom vector dot product differs from JAX implementation",
+        rtol=1e-5,
     )
