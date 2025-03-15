@@ -1,6 +1,6 @@
 # Neuron Network Implemented in Pure Python
 
-_The thing that makes neural networks appear challenging, is the math that is involved, and how scary it can sometimes look._
+_"The thing that makes neural networks appear challenging, is the math that is involved, and how scary it can sometimes look."_
 
 This repository is based on the awesome book [Neural Networks from Scratch](https://nnfs.io/), and the objective is th break down the overall complexity into smaller, more digestible pieces.
 
