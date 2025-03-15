@@ -29,6 +29,8 @@ We are going to use [NumPy](https://numpy.org/) for basic matrix operations, esp
 
 We will also use [Matplotlib](https://matplotlib.org/) for plotting, and [Pygame](https://www.pygame.org/) for visualization.
 
+[Pytest](https://docs.pytest.org/en/7.3.x/) is used for testing the code. These test are mainly AI-generated, and are not necessary for understanding the neuron network.
+
 ## Formatting
 
 For each topic we will have a separate folder, with each folder containing jupyter notebooks and python scripts.

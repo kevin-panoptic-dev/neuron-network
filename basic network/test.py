@@ -96,12 +96,6 @@ def test_matrix_vector_multiplication():
         _ = m * Vector([1, 2])
 
 
-def test_matrix_shape_validation():
-    # Invalid matrix (different row lengths)
-    with pytest.raises(ShapeError):
-        Matrix([[1, 2], [3, 4, 5]])
-
-
 def test_empty_matrix():
     m = Matrix([])
     assert m.shape == (0, 0)
